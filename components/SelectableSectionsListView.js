@@ -101,7 +101,7 @@ export default class SelectableSectionsListView extends Component {
     let y = 0;
     let headerHeight = this.props.headerHeight || 0;
     y += headerHeight;
-    
+
     if(this.props.contentInset) {
         y -= this.props.contentInset.top - headerHeight
     }
@@ -281,6 +281,7 @@ const styles = StyleSheet.create({
 const stylesheetProp = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.object,
+  PropTypes.array,
 ]);
 
 SelectableSectionsListView.propTypes = {
